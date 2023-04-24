@@ -6,6 +6,7 @@ $array = array(12, 34, 6, 4, 76, 87, 34, 23, 13, 9);
 
 function maior_menor($array){
     $maior = $array[0];
+    $menor = $array[0];
     $arrayFinal = array();
 
     for ($i= 1; $i < count($array); $i++) { 
@@ -13,19 +14,12 @@ function maior_menor($array){
             $maior =  $array[$i]; 
             $arrayFinal["Maior"] = $maior;
         }
-        
-    } 
-
-    $menor = $array[0];
-
-    for ($i= 1; $i < count($array); $i++) { 
         if ($menor > $array[$i]) {
             $menor =  $array[$i]; 
             $arrayFinal["Menor"] = $menor;    
         }
-       
-    }
-
+    } 
+    
     foreach ($arrayFinal as $key => $value) {
         echo $key." ".$value."\n";
     }

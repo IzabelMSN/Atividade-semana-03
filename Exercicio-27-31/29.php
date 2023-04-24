@@ -14,7 +14,7 @@ $somaMQuadrada = 0;
 
 for ($i=0; $i < count($matrizQuadrada) ; $i++) { 
     for ($j=0; $j < count($matrizQuadrada[0]); $j++) { 
-        if ($matrizQuadrada[$i] == $matrizQuadrada[$j]) {
+        if ($i == $j) {
             $somaMQuadrada += $matrizQuadrada[$i][$j];
         }
     }
